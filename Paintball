@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Paintballfull</title>
+  <meta name="description" content="Paintballfull — ação, estratégia e adrenalina. Agende sua partida e venha jogar com a gente!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header class="header">
+    <div class="container nav">
+      <a href="#" class="logo">Paintballfull</a>
+      <nav class="menu" id="menu">
+        <a href="#home">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+        <button class="btn primary" id="btnAgendar">Agendar partida</button>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="container hero-content">
+      <h1>Ação sem limites no <span>Paintballfull</span></h1>
+      <p>Estratégia, adrenalina e diversão em partidas eletrizantes. Monte seu time e domine o campo.</p>
+      <div class="hero-cta">
+        <button class="btn primary" id="btnAgendarHero">Agendar partida</button>
+        <a href="#sobre" class="btn ghost">Saiba mais</a>
+      </div>
+    </div>
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Sobre o jogo</h2>
+        <p>
+          Paintball é um esporte de ação que combina estratégia, trabalho em equipe e muita adrenalina.
+          No Paintballfull, você encontra cenários imersivos, equipamentos de alta qualidade e modos de jogo
+          para todos os níveis—do iniciante ao competitivo.
+        </p>
+        <ul class="features">
+          <li><strong>Equipamentos premium:</strong> marcadores, máscaras e coletes revisados.</li>
+          <li><strong>Modos variados:</strong> captura de bandeira, eliminação, defesa de base.</li>
+          <li><strong>Segurança:</strong> briefings, árbitros e regras claras.</li>
+        </ul>
+        <button class="btn secondary" id="btnAgendarSobre">Quero jogar</button>
+      </div>
+      <div class="card">
+        <h3>Experiência Paintballfull</h3>
+        <p>
+          Nosso campo foi projetado para oferecer partidas intensas e memoráveis. Venha com amigos,
+          equipe da empresa ou celebre seu evento com muita ação.
+        </p>
+        <div class="stats">
+          <div class="stat">
+            <span class="stat-number">12+</span>
+            <span class="stat-label">Cenários</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">3000m²</span>
+            <span class="stat-label">Área de jogo</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Agendamentos</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeria -->
+  <section id="galeria" class="section section-dark">
+    <div class="container">
+      <h2>Galeria</h2>
+      <p>Um pouco da energia que você vai viver por aqui.</p>
+      <div class="gallery">
+        <!-- Substitua os src por suas imagens -->
+        <img src="https://images.unsplash.com/photo-1549923746-3c8f2a7d4d3b?q=80&w=1200&auto=format&fit=crop" alt="Jogadores em ação" />
+        <img src="https://images.unsplash.com/photo-1520975922200-8b456906c813?q=80&w=1200&auto=format&fit=crop" alt="Campo de paintball" />
+        <img src="https://images.unsplash.com/photo-1520975922200-8b456906c812?q=80&w=1200&auto=format&fit=crop" alt="Equipe comemorando" />
+        <img src="https://images.unsplash.com/photo-1520975922200-8b456906c811?q=80&w=1200&auto=format&fit=crop" alt="Estratégia no jogo" />
+        <img src="https://images.unsplash.com/photo-1520975922200-8b456906c810?q=80&w=1200&auto=format&fit=crop" alt="Marcadores e equipamentos" />
+        <img src="https://images.unsplash.com/photo-1520975922200-8b456906c809?q=80&w=1200&auto=format&fit=crop" alt="Ação no campo" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Contato -->
+  <section id="contato" class="section">
+    <div class="container grid-2">
+      <div>
+        <h2>Contato</h2>
+        <p>Fale com a equipe Paintballfull para dúvidas, eventos e reservas.</p>
+        <ul class="contact-list">
+          <li><strong>Endereço:</strong> Borda da Mata, MG — Brasil</li>
+          <li><strong>E-mail:</strong> contato@paintballfull.com</li>
+          <li><strong>WhatsApp:</strong> (35) 99999-9999</li>
+          <li><strong>Horários:</strong> Seg–Dom, 08h–22h</li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <label>
+          Nome
+          <input type="text" name="nome" placeholder="Seu nome" required />
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" placeholder="Seu e-mail" required />
+        </label>
+        <label>
+          Mensagem
+          <textarea name="mensagem" rows="4" placeholder="Como podemos ajudar?" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Enviar</button>
+        <p class="form-feedback" id="contactFeedback" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Paintballfull — Ação e aventura.</p>
+      <div class="socials">
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="YouTube">YouTube</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal de agendamento -->
+  <div class="modal" id="modalAgendar" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Fechar">×</button>
+      <h3 id="modalTitle">Agendar partida</h3>
+      <form id="bookingForm">
+        <label>
+          Nome do responsável
+          <input type="text" name="responsavel" placeholder="Seu nome" required />
+        </label>
+        <label>
+          E-mail
+          <input type="email" name="email" placeholder="Seu e-mail" required />
+        </label>
+        <label>
+          Data
+          <input type="date" name="data" required />
+        </label>
+        <label>
+          Horário
+          <input type="time" name="hora" required />
+        </label>
+        <label>
+          Número de jogadores
+          <input type="number" name="jogadores" min="4" max="20" value="8" required />
+        </label>
+        <label>
+          Modo de jogo
+          <select name="modo" required>
+            <option value="captura-bandeira">Captura de Bandeira</option>
+            <option value="eliminacao">Eliminação</option>
+            <option value="defesa-base">Defesa de Base</option>
+          </select>
+        </label>
+        <button class="btn primary" type="submit">Confirmar</button>
+        <p class="form-feedback" id="bookingFeedback" aria-live="polite"></p>
+      </form>
+    </div>
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
