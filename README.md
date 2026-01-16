@@ -474,4 +474,47 @@
 </form>
 
 </body>
+</html><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lava Carros Autônomo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🚗 Lava Carros Autônomo</h1>
+    <p>Agende seu horário de forma rápida e prática!</p>
+  </header>
+
+  <main>
+    <form name="agendamento" method="POST" data-netlify="true">
+      <label for="nome">Nome:</label>
+      <input type="text" id="nome" name="nome" required>
+
+      <label for="telefone">Telefone:</label>
+      <input type="tel" id="telefone" name="telefone" required>
+
+      <label for="data">Data:</label>
+      <input type="date" id="data" name="data" required>
+
+      <label for="hora">Hora:</label>
+      <input type="time" id="hora" name="hora" required>
+
+      <label for="servico">Serviço:</label>
+      <select id="servico" name="servico" required>
+        <option value="lavagem simples">Lavagem Simples</option>
+        <option value="lavagem completa">Lavagem Completa</option>
+        <option value="polimento">Polimento</option>
+      </select>
+
+      <button type="submit">Agendar</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2026 Lava Carros Autônomo</p>
+  </footer>
+</body>
 </html>
